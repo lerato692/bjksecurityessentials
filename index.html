@@ -103,7 +103,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             box-shadow: 0 3px 15px rgba(0,0,0,0.06);
         }
 
@@ -759,6 +761,39 @@
     font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
+.securitycoursesimage img{
+width: 100%;
+max-width: 500px;
+height: 450px;
+object-fit: cover;
+border-radius: 5px;
+display: block;
+}
+.securitycoursescontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    padding: 60px 7%;
+}
+.security-courses{
+    max-width: 600px;
+    color: #5C5C5C;
+    line-height: 1.8;
+}
+.security-courses h1{
+    color: #c49a45;
+    margin-bottom: 25px;
+}
+.security-courses p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+section[id],
+div[id],
+footer[id]{
+    scroll-margin-top: 120px;
+}
         /* =========================
            FOOTER
         ========================== */
@@ -1001,8 +1036,11 @@
 
             </div>
 
+        </header>
 
-            <!-- MAIN NAVIGATION -->
+    </div>
+
+    <!-- MAIN NAVIGATION -->
 
             <nav class="main-navbar">
 
@@ -1045,10 +1083,6 @@
                 </div>
 
             </nav>
-
-        </header>
-
-    </div>
 
 
 
@@ -1317,6 +1351,30 @@
          </div>
     </div>
 
+</div>
+
+<div class="securitycoursescontent" id="services">
+    <div class="security-courses">
+        <h1>Security courses</h1>
+        <ul>
+            <li>Grade E - R799</li>
+            <li>Grade D - R799</li>
+            <li>Grade C - R899</li>
+            <li>Combo Grade E, D, C - R2199</li>
+            <li>Combo Grade B , A - R1999</li>
+            <li>Grade B - R1150</li>
+            <li>Grade A - R1150</li>
+            <li>Arm Response - R1500</li>
+            <li>Cash in Transit - R1600</li>
+        </ul>
+        <br />
+        <a href="#login" class="hero-button">
+            Book today
+        </a>
+    </div>
+    <div class="securitycoursesimage">
+        <img src="icons\security_image.jpg">
+    </div>
 </div>
 
 
